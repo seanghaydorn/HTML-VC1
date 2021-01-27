@@ -1,43 +1,70 @@
 body{
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-    background-image: url("https://cdn.pixabay.com/photo/2015/11/26/22/28/girl-1064664_960_720.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.img{
+    background-image: url("imges/imge.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-position: center 25%;
+}
+.cover{
+    height: 60vh;
 }
 ul{
+    display: flex;
     list-style: none;
-}
-a{
+    margin: 0;
+    justify-content: flex-end;
+    margin-right: 80px;
+    }
+ul li{
+    padding: 20px;
+    }
+ul li a{
     text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
 }
+ul li a:hover{
+    text-decoration: underline;
+    }
 h1{
     justify-content: center;
     align-items: center;
+    margin-left: 100px;
+    color:black;
 }
-.header{
-    background-color: url("https://cdn.pixabay.com/photo/2015/11/26/22/28/girl-1064664_960_720.jpg");
+.box {
+    height: 60vh;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.box-left {
     background-size: cover;
-     background-position: center -200px;
-    height: 50vh;
-}
-nav{
+    text-align: center;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    background-color:rgb(29, 185, 29);
-    box-shadow:2px 2px  12px rgb(0,0,0,0.2);
-    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 }
-nav ul{
-    display: flex;
-}
-nav ul li a{
-    margin: 30px;
-    font-family: cursive;
+.btn {
+    width: 200px;
+    padding: 15px;
+    background:green;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    border:none;
     color: #fff;
-    font-size: 20px;
-    font-weight: 700;
+}
+.btn-raduis-right {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 .box-content {
     display: grid;
@@ -45,7 +72,6 @@ nav ul li a{
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
-    
 }
 h3{
     font-size: 20px;
@@ -82,9 +108,7 @@ h3{
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
-
 .box-left {
-    background: url('https://cdn.pixabay.com/photo/2016/11/08/06/45/restaurant-1807617_960_720.jpg');
     background-size: cover;
     text-align: center;
     display: flex;
@@ -118,6 +142,53 @@ h3{
     padding: 10px;
     border-radius: 5px;
 }
+.contaner-login{
+    width: 400px;
+    padding: 15px;
+    border: 3px solid;
+    background: white;
+    border-radius: 6px;
+}
+input[type="text"],
+input[type="email"],
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: rgb(59, 62, 65);
+    border-radius: 35px;
+    margin: 12px 0;
+    color: white;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.contaner-login button{
+        width: 100%;
+        padding: 12px;
+        background:rgba(94, 96, 211, 0.9);
+        color:#fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        border-radius: 35px;
+        outline: none;
+        cursor: pointer;
+}
+h2{
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    font-size: 20px;
+}
 iframe {
     width: 100%;
     height: 50vh;
@@ -126,17 +197,18 @@ footer {
     background: rgb(87, 75, 129);
     text-align: center;
     color: #fff;
-    padding: 50px;
+    padding: 40px;
 }
 .icon{
-    padding: 30px;
+    padding: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 li a{
-    color: white;
+    display: flex;
+    padding-right: 12px;
 }
-fa-youtube-play {
-    background:red;
+.head{
+    background-color:rgb(117, 21, 129);
 }

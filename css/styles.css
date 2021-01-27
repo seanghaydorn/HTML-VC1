@@ -1,13 +1,17 @@
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 .img{
-    background-image: url("imges/imge.jpg");
-    height: 80vh;
+    background-image: url("4.jpg");
+    height: 100vh;
     background-size: cover;
     background-position: center 40%;
+}
+.class img {
+   border-radius: 100%;
 }
 .cover{
     height: 80vh;
@@ -24,18 +28,14 @@ ul li{
     }
 ul li a{
     text-decoration: none;
-    color: #fff;
+    color: teal;
     text-transform: uppercase;
     font-size: 25px;
 }
 ul li a:hover{
     text-decoration: underline;
-    }
-h1{
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-    color:red;
+    color: red;
+    cursor: pointer;
 }
 .box {
     height: 70vh;
@@ -179,14 +179,14 @@ input[type="submit"]{
         cursor: pointer;
 }
  h1{
-    /* text-transform: uppercase;
+    text-transform: uppercase;
     text-align: center;
     color: rgb(34, 31, 37);
-    font-size: 30px; */
+    font-size: 30px;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: -25%;
+    margin-top: -10%;
     font-size: 50px;
 }
 h2{
@@ -206,27 +206,28 @@ h4{
 }
 iframe {
     width: 100%;
-    height: 60vh;
+    height: 65vh;
 }
 footer {
-    background: rgb(87, 75, 129);
+    background:rgb(54, 35, 56);
     text-align: center;
     color: #fff;
-    padding: 30px;
-    color: #fff;
+    padding: 17px;
+
 }
 .icons{
-    padding: 25px;
+    padding: 20px;
     justify-content:center;
     align-items: center;
     display: flex;
 }
 .class img{
-    width: 25%;
-    height: 25%;
-    margin-top: -50px;
-    margin-left: 20px;
-
+    width: 15%;
+    height: 17%;
+    margin-top: -30px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    border-radius: 8%;
 }
 p {
     display: flex;
@@ -235,5 +236,3 @@ p {
     font-size: 16px;
     color: black;
 }
-
- 

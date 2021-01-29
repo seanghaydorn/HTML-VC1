@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
  }
  .images img{
      width: 100%;
@@ -20,11 +20,12 @@ body{
      transform: translate(-40%, -40%);
      font-size: 350%;
      text-transform: uppercase;
-     font-family: 'Volkhov', serif;
-     color: white;
-   }
+  
+    color: #000;
+     /* background-color:rgb(228, 243, 193); */
+}
  .text-one:hover{
-     color: yellow;
+     color:yellow;
  }
  .text-two{
      position: absolute;
@@ -33,24 +34,39 @@ body{
      transform: translate(-40%, -40%);
      font-size: 300%;
      text-transform: uppercase;
-     font-family: 'Volkhov', serif;
  }
  .text-two:hover{
-     color: yellow;
+     color:yellow;
  }
  .text-three{
-     position: absolute;
-     top: 89%;
-     left: 45%;
-     transform: translate(-40%, -40%);
-     font-size: 250%;
-     text-transform: uppercase;
-     font-family: 'Volkhov', serif;
+    position: absolute;
+    top: 89%;
+    left: 45%;
+    transform: translate(-40%, -40%);
+    font-size: 250%;
+    text-transform: uppercase;
  }
+ .text-four {
+    position: absolute;
+    top: 165%;
+    left: 45%;
+    transform: translate(-40%, -40%);
+    font-size: 200%;
+    text-transform: uppercase;
+    color: #fff;
+
+ 
+   color: #000;
+    /* background-color:rgb(228, 243, 193); */
+}
  .text-three:hover{
      color:yellow;
  }
- 
+ .text-one,
+ .text-two,
+ .text-three {
+    padding: 6px;
+ }
  /* .customization_text {
      padding: 30px;
      border-radius: 50%;
@@ -88,20 +104,21 @@ body{
      display: grid;
      grid-template-columns: repeat(2, 1fr);
  }
- .icons{
+ /* .icons{
      padding: 10px;
      justify-content: space-evenly;
      margin-top: auto;
- }
+ } */
  
  /* cv */
- .img{
-     background-image: url("image/7.jpeg");
-     height: 100vh;
-     background-size: cover;
-     background-position: center 50%;
- }
- .clicle{
+ .cricle{
+    position: absolute;
+    left: 56%;
+    top: 134%;
+    transform: translate(-50%, -50%);
+} 
+ .cricle img{
+    width: 65%;
     border-radius: 50%;
  }
  .cover{
@@ -159,23 +176,24 @@ body{
      background: rgb(81, 70, 236);
      border-radius: 40px;
  }
- .button:hover{
+.button:hover{
      background-color: yellow;
- }
- .cv{
+}
+.cv{
      text-align: center;
      background-color: rgb(231, 227, 235);
      width: 100%;
      height: 100%;
      padding: 70px;
- }
- .text img{
+}
+.text img{
      width: 50%;
      height: 70%;
  }
  h6{
      font-size: 20px;
     text-decoration: underline;
+    text-align: center;
  }
  
  /* contant */
@@ -185,42 +203,42 @@ body{
      background-size: cover;
      background-position: center 40%;
  }*/
- ul{
+ul{
      display: flex;
      list-style: none;
      margin: 0;
      justify-content: flex-end;
      margin-right: 80px;
      }
- ul li{
+ul li{
      padding: 20px;
      }
- ul li a{
+ul li a{
      text-decoration: none;
      color:white;
      text-transform: uppercase;
      font-size: 27px;
  }
- ul li a:hover{
+ul li a:hover{
      text-decoration: underline;
      color: yellow;
      cursor: pointer;
  }
- .box {
+.box {
      height: 70vh;
      margin-bottom: 70px;
      display: grid;
      grid-template-columns: repeat(2, 50%);
- }
- .box-left {
+}
+.box-left {
      background-size: cover;
      text-align: center;
      display: flex;
      justify-content: flex-start;
      align-items: flex-start;
      flex-direction: column;
- }
- .btn {
+}
+.btn {
      width: 200px;
      padding: 15px;
      background:rgb(116, 230, 116);
@@ -230,6 +248,8 @@ body{
      cursor: pointer;
      border:none;
      color: #fff;
+     justify-content: flex-start;
+     align-items: center;
  }
  .btn-raduis-right {
      border-top-right-radius: 40px;
@@ -325,9 +345,9 @@ body{
  }
  footer {
      background:rgb(54, 35, 56);
-     text-align: center;
+     /* text-align: center; */
      color: #fff;
-     padding: 17px;
+     padding: 30px;
      margin-bottom: -50px;
  }
  .icons {
@@ -336,8 +356,8 @@ body{
      flex-wrap: wrap;
  }
  .icons a{
-     padding: 15px;
-     text-align: right;
+     padding: 10px;
+     text-align: center;
  }
  p {
      display: flex;
@@ -346,7 +366,7 @@ body{
      font-size: 16px;
      color: rgb(243, 235, 235);
  }
- .sidebar {
+.sidebar {
      height: 30%;
      width: 50px;
      position: fixed;
@@ -358,22 +378,21 @@ body{
      padding-top: 16px;
     justify-content: flex-start;
     align-items: center;
- }
- .sidebar a {
+}
+.sidebar a {
      padding: 6px 8px 6px 16px;
      text-decoration: none;
      font-size: 20px;
      color: #818181;
      display: block;
- }
-   .sidebar a:hover {
+}
+.sidebar a:hover {
      color: yellow;
-   }
-   
- .main {
+} 
+.main {
      margin-left: 160px;
      padding: 0px 10px;
- }
+}
  * {
      box-sizing: border-box;
  }
@@ -425,50 +444,45 @@ body{
  
  /* about */
  
- body{
-     margin: 0;
-     padding: 0;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     }
  .cover{
      height: 80vh;
  }
- ul{
+ul{
      display: flex;
      list-style: none;
      margin: 0;
      justify-content: flex-end;
      margin-right: 80px;
      }
- ul li{
+ul li{
      padding: 20px;
      }
- ul li a{
-     text-decoration: none;
+ul li a{
+    text-decoration: none;
     color:#fff
-     text-transform: uppercase;
-     font-size: 27px;
- }
- ul li a:hover{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+ul li a:hover{
      text-decoration: underline;
      color: yellow;
      cursor: pointer;
- }
- .box {
+}
+/* .box {
      height: 70vh;
      margin-bottom: 70px;
      display: grid;
      grid-template-columns: repeat(2, 50%);
- }
- .box-left {
+} */
+.box-left {
      background-size: cover;
      text-align: center;
      display: flex;
      justify-content: flex-start;
      align-items: flex-start;
      flex-direction: column;
- }
- .btn {
+}
+.btn {
      width: 200px;
      padding: 15px;
      background:rgb(132, 166, 230);
@@ -478,24 +492,24 @@ body{
      cursor: pointer;
      border:none;
      color: #fff;
- }
- .btn-raduis-right {
+}
+.btn-raduis-right {
      border-top-right-radius: 40px;
      border-bottom-right-radius: 40px;
- }
- .box-content {
+}
+.box-content {
      display: grid;
      grid-gap: 20px;
      width: 90%;
      margin: auto;
      margin-top: 20px;
      
- }
- .serve {
+}
+/* .serve {
      grid-column: 1 / 3;
      text-align: center;
- }
- .serve-one {
+} */
+.serve-one {
      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAA1BMVEWZut2z8Fb+AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsYMAAFjd3WkAAAAAElFTkSuQmCC');
      background-size: cover;
      height: 50vh;
@@ -503,8 +517,8 @@ body{
      justify-content: center;
      align-items: center;
      flex-direction: column;
- }
- .serve-two {
+}
+.serve-two {
      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAEsCAMAAABgwwj8AAAAA1BMVEWZut2z8Fb+AAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsYMAAFjd3WkAAAAAElFTkSuQmCC');
      background-size: cover;
      display: flex;
@@ -512,16 +526,16 @@ body{
      align-items: center;
      flex-direction: column;
      height: 50vh;
- }
- .br5 {
+}
+ /* .br5 {
      border-radius: 5px;
- }
- .box {
+ } */
+.box {
      height: 60vh;
      margin-top: 20px;
      display: grid;
      grid-template-columns: repeat(2, 50%);
- }
+}
 .box-left {
      background-size: cover;
      text-align: center;
@@ -567,7 +581,7 @@ footer {
      background:rgb(54, 35, 56);
      text-align: center;
      color: #fff;
-     padding: 20px;
+     padding: 10px;
      margin-bottom: -50px;
  }
 .icons {
@@ -593,7 +607,7 @@ footer {
      /* z-index: 1; */
      top: 0;
      left: 0;
-     background-color: rgb(130, 161, 228);
+     background-color: rgb(97, 211, 116);
     justify-content:center;
     align-items: center;
 }
@@ -630,5 +644,15 @@ footer {
  h5{
      font-size: 15px;
  }
-   
+ @media(max-width: 600px) {
+    .serve,
+    .serve-one,
+    .serve-two,
+    .serve-three,
+    .serve-four,
+    .box-left,
+    .box-right {
+        grid-column: 1/3;
+    }
+ } 
    

@@ -9,6 +9,10 @@ body{
  .img{
      height: 50px;
  }
+ .img{
+     width: 200%;
+     border-radius: 50%;
+ }
  .text-one {
      position: absolute;
      top: 60%;

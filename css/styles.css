@@ -654,5 +654,15 @@ footer {
     .box-right {
         grid-column: 1/3;
     }
- } 
+ }
+@media screen and (max-width: 600px) {
+        .nav {
+          float: none;
+        }
+        ul li a {
+          top: 0;
+          left: 0;
+          transform: none;
+        }
+    }
    

@@ -7,12 +7,12 @@ body{
      width: 100%;
  }
  .img{
-     height: 50px;
+     height: 100px;
  }
- .img{
-     width: 200%;
+ /* .img{
+     width: 100%;
      border-radius: 50%;
- }
+ } */
  .text-one {
      position: absolute;
      top: 60%;
@@ -60,7 +60,7 @@ body{
      background-image: url("image/7.jpeg");
  } */
  nav{
-    background-color:rgb(84, 179, 179);
+    background-color:rgb(61, 54, 80);
  }
  ul{
      display: flex;
@@ -74,7 +74,7 @@ body{
  }
  ul li a{
      text-decoration: none;
-     color:rgb(242, 250, 245);
+     /* color:rgb(242, 250, 245); */
      text-transform: uppercase;
      font-size: 27px;
  }
@@ -101,7 +101,10 @@ body{
      background-image: url("image/7.jpeg");
      height: 100vh;
      background-size: cover;
-     background-position: center 40%;
+     background-position: center 50%;
+ }
+ .clicle{
+    border-radius: 50%;
  }
  .cover{
      height: 80vh;
@@ -149,6 +152,7 @@ body{
      height: 15px;
      width: 60px;
      color: white;
+     text-align: center;
  }
  button{
      padding: 20px;
@@ -168,12 +172,12 @@ body{
  }
  
  /* contant */
-  .img{
+  /* .img{
      /* background-image: url("image/11.jpg"); */
-     height: 100vh;
+     /*height: 100vh;
      background-size: cover;
      background-position: center 40%;
- }
+ }*/
  ul{
      display: flex;
      list-style: none;
@@ -328,9 +332,6 @@ body{
      padding: 15px;
      text-align: right;
  }
- .iconsone,icons{
-     padding: 7px;
- }
  p {
      display: flex;
      justify-content: center;
@@ -437,7 +438,7 @@ body{
      }
  ul li a{
      text-decoration: none;
-     color:rgb(39, 39, 206);
+    color:#fff
      text-transform: uppercase;
      font-size: 27px;
  }
@@ -581,14 +582,14 @@ footer {
 .sidebar {
      height: 30%;
      width: 50px;
-     position: fixed;
-     z-index: 1;
+     /* position: fixed; */
+     /* z-index: 1; */
      top: 0;
      left: 0;
-     background-color: #111;
-     overflow-x: hidden;
-     padding-top: 16px;
-    justify-content: flex-start;
+     background-color: rgb(130, 161, 228);
+     /* overflow-x: hidden; */
+     /* padding-top: 16px; */
+    justify-content:center;
     align-items: center;
 }
    
@@ -596,11 +597,11 @@ footer {
      padding: 6px 8px 6px 16px;
      text-decoration: none;
      font-size: 20px;
-     color: #818181;
+     color: #fff;
      display: block;
 }
 .sidebar a:hover {
-     color: yellow;
+     color:black;
 }
 .main {
      margin-left: 160px;
@@ -620,6 +621,9 @@ footer {
      justify-content: start;
      align-items: center;
      flex-direction: column;
+ }
+ h5{
+     font-size: 15px;
  }
    
    

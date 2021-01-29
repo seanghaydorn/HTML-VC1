@@ -6,13 +6,13 @@ body{
  .images img{
      width: 100%;
  }
- .img{
-     height: 100px;
- }
  /* .img{
-     width: 100%;
-     border-radius: 50%;
+     height: 100px;
  } */
+ .img{
+     width: 100%;
+     /* border-radius: 50%; */
+ }
  .text-one {
      position: absolute;
      top: 60%;
@@ -85,15 +85,13 @@ body{
  }
  footer {
      background:rgb(54, 35, 56);
-     text-align: center;
-     color: #fff;
-     padding: 20px;
-     margin-bottom: -50px;
-     justify-content: space-evenly;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
  }
  .icons{
      padding: 10px;
      justify-content: space-evenly;
+     margin-top: auto;
  }
  
  /* cv */
@@ -157,8 +155,9 @@ body{
  button{
      padding: 20px;
      height: 15px;
-     width: 30%;
+     width: 25%;
      background: rgb(81, 70, 236);
+     border-radius: 40px;
  }
  .button:hover{
      background-color: yellow;
@@ -169,6 +168,14 @@ body{
      width: 100%;
      height: 100%;
      padding: 70px;
+ }
+ .text img{
+     width: 50%;
+     height: 70%;
+ }
+ h6{
+     font-size: 20px;
+    text-decoration: underline;
  }
  
  /* contant */
@@ -587,8 +594,6 @@ footer {
      top: 0;
      left: 0;
      background-color: rgb(130, 161, 228);
-     /* overflow-x: hidden; */
-     /* padding-top: 16px; */
     justify-content:center;
     align-items: center;
 }
